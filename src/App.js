@@ -28,7 +28,7 @@ const App = () => {
   const { dateStart, dateEnd, workDays } = current.context;
   return (
     <Box p={6} h="100vh" bg={bgColor[colorMode]}>
-      <Box position="relative">
+      {/* <Box position="relative">
         <IconButton
           icon={colorMode === "dark" ? "sun" : "moon"}
           position="absolute"
@@ -36,7 +36,7 @@ const App = () => {
           right={0}
           onClick={toggleColorMode}
         />
-      </Box>
+      </Box> */}
       {/* <Stack isInline justifyContent="center"> */}
       <Heading as="h1" mb={8}>
         Kalkulator Dni Roboczych
@@ -63,7 +63,12 @@ const App = () => {
           />
         </FormControl>
         <FormControl>
-          <FormLabel htmlFor="work-days">Dni robocze</FormLabel>
+          <FormLabel htmlFor="work-days" w="full">
+            Dni robocze{" "}
+            <FormHelperText as="span" ml={4}>
+              dni tygodnia bez sobót, niedziel i świąt państwowych
+            </FormHelperText>
+          </FormLabel>
           <NumberInput>
             <NumberInputField
               id="work-days"

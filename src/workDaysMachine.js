@@ -1,9 +1,6 @@
-import { Machine, assign } from "xstate";
-import {
-  differenceInBusinessDays as dbd,
-  addBusinessDays as abd,
-  format,
-} from "date-fns";
+import { addBusinessDays as abd, format } from "date-fns";
+import { assign, Machine } from "xstate";
+import { getWorkDays } from "./workDaysUtils";
 
 const initialState = {
   workDays: "",
@@ -25,7 +22,7 @@ export const workDaysMachine = Machine({
             ...context,
             dateStart: event.value,
             workDays: context.dateEnd
-              ? dbd(new Date(context.dateEnd), new Date(event.value))
+              ? getWorkDays(new Date(context.dateEnd), new Date(event.value))
               : context.workDays,
             dateEnd: context.workDays
               ? format(
@@ -40,7 +37,7 @@ export const workDaysMachine = Machine({
             ...context,
             dateEnd: event.value,
             workDays: context.dateStart
-              ? dbd(new Date(event.value), new Date(context.dateStart))
+              ? getWorkDays(new Date(event.value), new Date(context.dateStart))
               : context.workDays,
           })),
         },
