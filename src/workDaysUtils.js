@@ -8,6 +8,13 @@ import {
   isSunday,
 } from "date-fns";
 import publicHolidays from "./publicHolidays.json";
+import Holidays from "date-holidays";
+
+const polishHolidays = new Holidays("PL", {
+  languages: "pl",
+  types: ["public"],
+});
+console.log("holidays", polishHolidays.getHolidays("2020"));
 
 export const getHolidayDays = (laterDate, earlierDate) => {
   const earlierDateUnix = getUnixTime(earlierDate);
