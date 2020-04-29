@@ -4,25 +4,25 @@
 
 ### 🌍 [Wersja online](https://l3szcz.github.io/dni-robocze)
 
-## Install
+## Instalacja
 
 ```sh
 npm install
 ```
 
-## Usage
+## Uruchomienie
 
 ```sh
 npm run start
 ```
 
-## Run tests
+## Testy
 
 ```sh
 npm run test
 ```
 
-## Author
+## Autor
 
 👤 **Kamil Doroszewicz**
 
