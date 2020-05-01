@@ -60,3 +60,14 @@ describe("getYearsRange", () => {
     expect(result).toEqual([2018, 2019, 2020, 2021]);
   });
 });
+
+describe("getTotalNumberOfHolidayDays", () => {
+  it("should return 1 for date range 2020-05-01 and 2020-05-31", () => {
+    const result = getTotalNumberOfHolidayDays(
+      new Date("2020-05-31"),
+      new Date("2020-05-01")
+    );
+
+    expect(result).toEqual(1);
+  });
+});
