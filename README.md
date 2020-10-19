@@ -2,7 +2,7 @@
 
 > Kalkulator ilości dni roboczych pomiędzy 2 datami. Za dni nierobocze przyjmuję święta państwowe, soboty i niedziele.
 
-### 🌍 [Wersja online](https://dni-robocze.netlify.app)
+### 🌍 [Wersja online](https://kalkulatordniroboczych.pl/)
 
 ## Instalacja
 
