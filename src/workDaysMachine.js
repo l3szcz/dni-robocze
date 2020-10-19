@@ -4,7 +4,7 @@ import { getWorkDays } from "./workDaysUtils";
 
 const initialState = {
   workDays: "",
-  dateStart: "",
+  dateStart: format(new Date(), "yyyy-MM-dd"),
   dateEnd: "",
 };
 
