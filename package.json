@@ -4,26 +4,26 @@
   "private": true,
   "homepage": "https://dni-robocze.netlify.app",
   "dependencies": {
-    "@chakra-ui/core": "^0.7.0",
-    "@emotion/core": "^10.0.28",
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@xstate/react": "^0.8.1",
-    "date-fns": "^2.12.0",
-    "date-holidays": "^1.5.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.8",
+    "@xstate/react": "^1.0.1",
+    "date-fns": "^2.16.1",
+    "date-holidays": "^1.8.1",
     "emotion-theming": "^10.0.27",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "xstate": "^4.9.1"
+    "next": "^9.5.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "xstate": "^4.13.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,7 +41,6 @@
     ]
   },
   "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "gh-pages": "^2.2.0"
+    "@types/jest": "^26.0.14"
   }
 }

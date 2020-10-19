@@ -40,7 +40,6 @@ export const getHolidaysInDateRange = (laterDate, earlierDate) => {
 export const getTotalNumberOfHolidayDays = (laterDate, earlierDate) => {
   let holidaysInRange = getHolidaysInDateRange(laterDate, earlierDate)
     .map((holiday) => {
-      debugger;
       const date = new Date(holiday.date.slice(0, 10));
       if (!isSaturday(date) && !isSunday(date)) {
         return date;
@@ -67,7 +66,6 @@ export const getWorkDays = (laterDate, earlierDate) => {
   const beginDate = startOfDay(earlierDate);
   const endDate = startOfDay(trueLaterDater);
 
-  debugger;
   const workDays = dbd(endDate, beginDate);
   const finalDays = workDays - getTotalNumberOfHolidayDays(endDate, beginDate);
   return finalDays;
