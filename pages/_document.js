@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-const GA_TRACKING_ID = "UA-165301338-1";
+const GA_TRACKING_ID = "G-1J9SF3P3BK";
 
 export default class MyDocument extends Document {
   render() {
@@ -15,13 +15,16 @@ export default class MyDocument extends Document {
           <script
             dangerouslySetInnerHTML={{
               __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
 
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
+gtag("config", "${GA_TRACKING_ID}", {
+  page_path: window.location.pathname,
+});
+
           `,
             }}
           />
