@@ -5,7 +5,7 @@
   "homepage": "https://dni-robocze.netlify.app",
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
-    "@emotion/core": "^10.0.35",
+    "@emotion/core": "^10.1.1",
     "@emotion/styled": "^10.0.27",
     "@xstate/react": "^1.0.1",
     "date-fns": "^2.16.1",
