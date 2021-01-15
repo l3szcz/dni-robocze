@@ -9,7 +9,7 @@
     "@emotion/styled": "^10.0.27",
     "@xstate/react": "^1.2.2",
     "date-fns": "^2.16.1",
-    "date-holidays": "^1.8.6",
+    "date-holidays": "^1.8.7",
     "emotion-theming": "^10.0.27",
     "next": "^10.0.5",
     "react": "^17.0.1",
