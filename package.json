@@ -8,7 +8,7 @@
     "@emotion/core": "^10.1.1",
     "@emotion/styled": "^10.0.27",
     "@xstate/react": "^1.2.2",
-    "date-holidays": "^1.9.1",
+    "date-holidays": "^2.0.0",
     "date-fns": "^2.17.0",
     "emotion-theming": "^10.0.27",
     "next": "^10.0.6",
