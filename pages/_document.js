@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
             async
             defer
             data-domain="kalkulatordniroboczych.pl"
-            src="https://plausible.io/js/plausible.js"
+            src="https://stats.kalkulatordniroboczych.pl/js/index.js"
           ></script>
         </Head>
         <body>
