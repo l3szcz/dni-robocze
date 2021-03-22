@@ -15,7 +15,7 @@
     "next": "^10.0.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "xstate": "^4.16.2"
+    "xstate": "^4.17.0"
   },
   "scripts": {
     "dev": "next dev",
