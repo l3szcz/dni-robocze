@@ -13,8 +13,8 @@
     "date-fns": "^2.19.0",
     "emotion-theming": "^10.0.27",
     "next": "^10.0.9",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "xstate": "^4.17.1"
   },
   "scripts": {
