@@ -22,14 +22,8 @@ const Index = () => {
   const [current, send] = useMachine(workDaysMachine);
 
   const { dateStart, dateEnd, workDays } = current.context;
-  console.log(
-    "🚀 ~ file: index.js ~ line 25 ~ Index ~ dateStart, dateEnd, workDays",
-    dateStart,
-    dateEnd,
-    workDays
-  );
   return (
-    <Box p={6} h="100vh" bg="gray.50">
+    <Box p={6} h="100vh">
       <Head>
         <title>Kalkulator Dni Roboczych</title>
         <meta
@@ -46,6 +40,7 @@ const Index = () => {
           <FormControl>
             <FormLabel htmlFor="date-start">Data początkowa</FormLabel>
             <Input
+              bg="white"
               id="date-start"
               name="date-start"
               type="date"
@@ -62,6 +57,7 @@ const Index = () => {
               </FormHelperText>
             </FormLabel>
             <NumberInput
+              bg="white"
               id="work-days"
               name="work-days"
               type="text"
@@ -81,6 +77,7 @@ const Index = () => {
           <FormControl>
             <FormLabel htmlFor="date-end">Data końcowa</FormLabel>
             <Input
+              bg="white"
               id="date-end"
               name="date-end"
               type="date"
