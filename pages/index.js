@@ -12,7 +12,7 @@ import {
   NumberInputStepper,
   Stack,
   Text,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import { useMachine } from "@xstate/react";
 import Head from "next/head";
 import React from "react";
@@ -22,6 +22,12 @@ const Index = () => {
   const [current, send] = useMachine(workDaysMachine);
 
   const { dateStart, dateEnd, workDays } = current.context;
+  console.log(
+    "🚀 ~ file: index.js ~ line 25 ~ Index ~ dateStart, dateEnd, workDays",
+    dateStart,
+    dateEnd,
+    workDays
+  );
   return (
     <Box p={6} h="100vh" bg="gray.50">
       <Head>
@@ -55,15 +61,17 @@ const Index = () => {
                 dni tygodnia bez sobót, niedziel i świąt państwowych
               </FormHelperText>
             </FormLabel>
-            <NumberInput>
-              <NumberInputField
-                id="work-days"
-                name="work-days"
-                type="text"
-                placeholder="Dni robocze"
-                value={workDays}
-                onChange={(e) => send("WORK_DAYS", { value: e.target.value })}
-              />
+            <NumberInput
+              id="work-days"
+              name="work-days"
+              type="text"
+              placeholder="Dni robocze"
+              value={workDays}
+              onChange={(_, valueAsNumber) =>
+                send("WORK_DAYS", { value: valueAsNumber })
+              }
+            >
+              <NumberInputField />
               <NumberInputStepper>
                 <NumberIncrementStepper />
                 <NumberDecrementStepper />
